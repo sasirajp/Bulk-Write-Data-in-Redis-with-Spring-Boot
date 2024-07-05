@@ -24,6 +24,7 @@ public class RedisBulkApplication implements CommandLineRunner {
         String filePath = "abc.txt";
         Random random = new Random();
         Map<String, Student> data = new HashMap<>();
+        // Generate random students data
         for (int i = 0; i < 100; i++) {
             String id = String.valueOf(random.nextInt());
             String name = generateRandomString(5);
